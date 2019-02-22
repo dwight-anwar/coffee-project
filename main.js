@@ -4,14 +4,6 @@ function renderCoffee(coffee) {
     var html = '<div class="row coffee">';
     html += '<div class="col">';
     html += '<div class="justify-content-start d-flex flex-row">';
-    // html += '<td>' + coffee.id + '</td>';
-    html += '<h2>' + coffee.name + '</h2>';
-    html += '<p class="ml-2 my-auto pt-1 text-muted">' + coffee.roast + '</p>';
-    html += '</div>';
-    html += '</div>';
-    html += '<div class="col">';
-    html += '<div class="justify-content-start d-flex flex-row">';
-    // html += '<td>' + coffee.id + '</td>';
     html += '<h2>' + coffee.name + '</h2>';
     html += '<p class="ml-2 my-auto pt-1 text-muted">' + coffee.roast + '</p>';
     html += '</div>';
@@ -40,6 +32,7 @@ function updateCoffees(e) {
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
+
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
